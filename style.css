@@ -1,0 +1,138 @@
+:root {
+  --text: #1a1a1a;
+  --muted: #555;
+  --rule: #ccc;
+  --link: #1a4b8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2.5rem 1.25rem;
+  background: #fafafa;
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+}
+
+.cv {
+  max-width: 760px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border: 1px solid var(--rule);
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--text);
+}
+
+.cv-header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.contact-line {
+  margin: 0.15rem 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.contact-line a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.entry {
+  margin-bottom: 1rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry-title {
+  margin: 0 0 0.2rem;
+}
+
+.entry-meta {
+  margin: 0 0 0.3rem;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+p {
+  margin: 0.35rem 0;
+  font-size: 0.96rem;
+}
+
+ul {
+  margin: 0.3rem 0 0.6rem;
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+  font-size: 0.96rem;
+}
+
+li ul {
+  margin-top: 0.3rem;
+}
+
+.cv-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+@media print {
+  body {
+    background: #fff;
+    padding: 0;
+  }
+  .cv {
+    border: none;
+    padding: 0;
+    max-width: 100%;
+  }
+  .cv-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .cv {
+    padding: 1.75rem 1.25rem;
+  }
+}
